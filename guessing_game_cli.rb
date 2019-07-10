@@ -25,16 +25,14 @@ end
 #######################################
 
 def run_guessing_game
-  answer = ""
   num = generate_number
   prompt_user
-  user = capture_user_input 
-  if user == num 
-    answer = correct_number 
-  elsif user == "exit"
-    answer = goodbye 
+  input = capture_user_input 
+  if input == num 
+    correct_number 
+  elsif input == "exit"
+    goodbye 
   else 
-    answer =no_match(num)
+    no_match(num)
   end
-  answer
 end

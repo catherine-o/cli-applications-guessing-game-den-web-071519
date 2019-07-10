@@ -28,7 +28,7 @@ def run_guessing_game
   num = generate_number
   prompt_user
   input = capture_user_input 
-  if input.inlude?(num) 
+  if input.include?(num) 
     correct_number 
   elsif input == "exit"
     goodbye 

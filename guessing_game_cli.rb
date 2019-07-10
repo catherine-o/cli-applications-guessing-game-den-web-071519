@@ -28,12 +28,11 @@ def run_guessing_game
   num = generate_number
   prompt_user
   input = capture_user_input 
-  if !input == num 
-    no_match(num)
-    
-  elsif input == "exit"
-    goodbye 
-  else 
-    correct_number 
-  end
+    if input == num 
+      correct_number 
+    elsif input == "exit"
+      goodbye 
+    else 
+      no_match(num)
+    end
 end

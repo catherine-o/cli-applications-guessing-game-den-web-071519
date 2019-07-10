@@ -1,5 +1,3 @@
-require "pry"
-
 def generate_number
   num = (rand(6) + 1)
 end
@@ -30,12 +28,11 @@ def run_guessing_game
   num = generate_number
   prompt_user
   input = capture_user_input 
-  if input == num 
+  if input.inlude?(num) 
     correct_number 
   elsif input == "exit"
     goodbye 
   else 
     no_match(num)
   end
-  binding.pry
 end

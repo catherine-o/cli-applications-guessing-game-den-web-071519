@@ -7,7 +7,7 @@ def prompt_user
 end 
 
 def capture_user_input
-  input = gets.chomp 
+  input = gets.chomp.to_s
 end 
 
 def correct_number

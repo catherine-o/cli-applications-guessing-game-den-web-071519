@@ -32,10 +32,10 @@ def run_guessing_game
   input = capture_user_input 
   if input == num 
     correct_number 
-    binding.pry
   elsif input == "exit"
     goodbye 
   else 
     no_match(num)
   end
+  binding.pry
 end
